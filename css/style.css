@@ -1,0 +1,165 @@
+
+.block1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+   
+    animation-name: a;
+    animation-duration: 7s;
+    
+}
+
+@keyframes a{
+    from{background-color: blue;}
+    to{background-color: red;}
+}
+.block2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+
+    animation-name: b;
+    animation-duration: 6s;
+    animation-iteration-count: 5;
+}
+
+@keyframes b{
+    from{background-color: red;}
+    to{background-color: blue; border-radius: 50%;}
+}
+
+/* 63. Animation in CSS Part 02 */
+.block3{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+
+    animation-name: c;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes c{
+    0%{background-color: red}
+    20%{background-color: green}
+    50%{background-color: gold}
+    100%{background-color: red}
+}
+
+.block4{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+
+    animation-name: d;
+    animation-duration: 7s;
+    animation-iteration-count: 6;
+}
+
+@keyframes d{
+    0%{background-color: blue;border-radius: 50%;}
+    20%{background-color: red;border-radius: 50%;}
+    40%{background-color: gold;border-radius: 50%;}
+    50%{background-color: green;border-radius: 50%;}
+    100%{background-color: blue;border-radius: 50%;}
+}
+
+/* 64. Animation in CSS Part 03 
+         ***** important***** */
+.block5{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+
+    position: relative;
+
+    animation-name: e;
+    animation-duration: 3s;
+    /* animation-iteration-count: 5; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-direction: reverse; */
+}
+
+@keyframes e{
+    from{left:0}
+    to{left:1000px;}
+}
+.container2{
+    margin-top: 300px;
+}
+.container4{
+    margin-top: 125px;
+}
+.container5{
+    margin-top: 300px;
+}
+.container6{
+    margin-top: 300px;
+    
+}
+.block7{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+    position: relative;
+
+    animation-name: f;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+    animation-delay: 1s;
+    
+    animation-direction: alternate;
+}
+
+@keyframes f{
+    0%{left:0; top:0;}
+    25%{left:200px; top:0;}
+    50%{left:200px; top:200px;}
+    75%{left:0; top:200px;}
+    100%{left:0; top:0;}
+}
+
+.block8{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-right: 3.33%;
+    float:left;
+    text-align: center;
+    position: relative;
+
+    animation-name: g;
+    animation-duration: 2s;
+    animation-iteration-count: infinite ;
+    animation-delay: 1s;
+    
+    animation-direction: alternate;
+    animation-direction: reverse;
+}
+
+@keyframes g{
+    0%{left:0; top:0; border-radius: 50%;}
+    25%{left:200px; top:0; border-radius: 50%;}
+    50%{left:200px; top:200px; border-radius: 50%;}
+    75%{left:0; top:200px; border-radius: 50%;}
+    100%{left:0; top:0; border-radius: 50%;}
+}
